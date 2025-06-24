@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контактная информация - LoftView</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #e6ecf0, #f7f9fb);
+            margin: 0;
+            padding: 0;
+            color: #2c3e50;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #3b5998, #2c3e50);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .contact-container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-info {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 25px;
+            color: #2c3e50;
+            font-size: 2rem;
+        }
+
+        .contact-info p {
+            margin: 15px 0;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            margin-right: 12px;
+            color: #3b5998;
+            font-size: 1.4rem;
+        }
+
+        .map {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 50px;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-info a {
+            color: #3b5998;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #2d4373;
+        }
+    
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(44, 62, 80, 0.8);
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background-color: rgba(44, 62, 80, 1);
+    transform: translateY(-2px);
+}
+</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <a href="E:\site.html" class="back-button" title="Назад">&#8592;</a>
+    <div class="header">
+        <h1>Контактная информация</h1>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Свяжитесь с нами</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Адрес: Краснодар, ул. Котлярова, 19</p>
+            <p><i class="fas fa-phone"></i> Телефон: <a href="tel:+79064369061">+7 906 436-90-61</a></p>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:afigetbepta@mail.ru">afigetbepta@mail.ru</a></p>
+            <p><i class="fas fa-clock"></i> Время работы: Пн-Пт 9:00 - 18:00</p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.395590407788!2d39.0009275!3d45.0381895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04f8a31b9475d%3A0x123456789abcdef!2z0JrQuNGX0LIsINCg0LXRgdC60LDQsdC40Y8sIDE5LCDQnNC-0YHQutCw0Y8g0JrQuNGX0LAg0JHRgNC40L3QtdC90YI!5e0!3m2!1sru!2sru!4v1610000000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    
+<footer>
+        &copy; 2023 LoftView. Все права защищены.
+    </footer>
+</body>
+</html>
